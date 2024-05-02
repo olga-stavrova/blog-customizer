@@ -1,23 +1,12 @@
-//import type { Meta, StoryObj } from '@storybook/react';
-
 import { Select } from 'components/select/Select';
-import { useState,  ReactNode} from 'react';
-import { clsx } from 'clsx';
-/*
-const meta: Meta<typeof Select> = {
-	component: Select,
-};
-
-export default meta;
-type SelectFontsType = StoryObj<typeof Select>;
-*/
+import { useState } from 'react';
 
 type FontProps = {
 	/** Сам текст для вывода */
-	//children: ReactNode;
 	title: string;
-}
-const SelectWithState = ({title}:FontProps) => {
+};
+
+const SelectWithState = ({ title }: FontProps) => {
 	const options = [
 		{ title: '1 опция', value: '1 опция', className: '' },
 		{ title: '2 опция', value: '2 опция', className: '' },
@@ -38,6 +27,6 @@ const SelectWithState = ({title}:FontProps) => {
 	);
 };
 
-export const SelectFont = ({title}:FontProps) => {
-	return <SelectWithState title={title} />
+export const SelectFont = ({ title }: FontProps) => {
+	return <SelectWithState title={title} />;
 };

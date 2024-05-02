@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, RefObject, useEffect, useRef } from 'react';
 import { RadioGroup } from 'components/radio-group';
 import { Button } from 'components/button';
 import { Text } from 'components/text';
@@ -16,8 +16,6 @@ import {
 import styles from './ArticleParamsForm.module.scss';
 import { ArrowButton } from '../arrow-button';
 import { Separator } from '../separator';
-
-import { RefObject, useEffect, useRef } from 'react';
 
 const useOutsideClick = (
 	ref: RefObject<HTMLElement>,

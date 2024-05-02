@@ -6,9 +6,15 @@
 	width: 210px;
 	height: 50px;
 	text-align: center;
+	font-weight: 800;
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+	line-height: normal;
+	letter-spacing: 0;
+	text-transform: uppercase;
+	color: #000000;
 	border: 1px solid #000000;
 	cursor: pointer;
-	background: var(--gold, #ffc802);
 }
 
 .button:hover {
@@ -17,4 +23,14 @@
 
 .button:active {
 	background: var(--gold, #ffc802);
+}
+
+.resetButton:hover {
+	background: #000;
+	color: #fff;
+}
+
+.resetButton:active {
+	background: #000;
+	color: #fff;
 }
