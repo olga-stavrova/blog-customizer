@@ -8,12 +8,13 @@
 	text-align: center;
 	border: 1px solid #000000;
 	cursor: pointer;
-}
-
-.button:active {
 	background: var(--gold, #ffc802);
 }
 
 .button:hover {
+	background: var(--gold, #ffedab);
+}
+
+.button:active {
 	background: var(--gold, #ffc802);
 }
